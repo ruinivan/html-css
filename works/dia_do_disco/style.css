@@ -1,0 +1,220 @@
+@charset "UTF-8";
+p{
+    line-height: 1.25em;
+}
+body{
+    background-image: url("imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    margin: 0em;
+}
+header{
+    width: 100%;
+    height: 2em;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    background-color: rgba(0, 110, 255, 0.35);
+    border: 0.01em solid rgba(255, 255, 255, 0.6);
+    font-size: 1.35em;
+    color: #fff;
+    padding: 0.35em;
+    text-decoration: none;
+    border-radius: 1.6em;
+    margin: 0em 1.15em;
+}
+.page:hover{
+    transition: ease all 0.2s;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(0, 110, 255, 0.75);
+    border: 0.1em solid rgba(255, 255, 255, 0.9);
+    text-decoration: underline rgba(255, 255, 255, 0.85);
+}
+.mine > td{
+    transition: opacity 0.6s ease;
+}
+.mine:hover > :not(:hover){
+    opacity: 0.7;
+}
+.page:active{
+    transition: none;
+    color: #4fd6ff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.4em 0em 0em 0em;
+}
+#day{
+    backdrop-filter: blur(0.8em);
+    background-color: rgba(166, 166, 166, 0.2);
+    box-shadow: 0.2em 0.2em 0.5em rgba(100, 100, 100, 0.2);
+    height: 43em;
+    width: 68em;
+    border-radius: 1.6em; 
+    margin-top: 0.2em;
+}
+#day > h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin: 0.08em;
+}
+.para{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-indent: 1.6em;
+    margin: 0em 0.8em;
+    text-align: justify;
+    font-size: 0.92em;  
+}
+#info{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#info:hover{
+    font-size: 1.2em;
+    font-weight: bolder;
+    backdrop-filter: blur(0.2em);
+}
+#principal{
+    font-family: serif;
+}
+#table1{
+    margin: 0em 0em 0em 9em;
+}
+.classificacao{
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin: 0em 0em 0em 0em;
+}
+.nomes{
+    font-size: 0.98em;
+    margin: 0em 0em 0em 0em;
+    font-weight: normal;
+}
+.discos{
+    width: 12em;
+    height: 7.4em;
+    margin: 0em 0em 1em 0em;
+    border-radius: 0.4em;
+}
+.des{
+    filter: grayscale(100%);
+}
+.des:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+.des > td{
+    display: none;
+    margin-left: -10px;
+    width: 32em;
+    margin: 4em 0em 0em 0em;
+    color: rgb(10, 10, 10);
+    background: rgba(100, 100, 100, 0.8);
+    filter: opacity(85%);
+    border-radius: 1em;
+    padding-top: 0.001em;
+    padding-left: 0.2em;
+}
+.des:hover > td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.des > td:hover{
+    filter: opacity(110%) brightness(120%);
+    transition: 0.4s;
+}
+.des > th{
+    padding: 0em;
+}
+.text{
+    text-align: justify;
+    margin: 0em;
+}
+audio{
+    height: 2.1em;
+    width: 27em;
+    margin: 0em 0em 0em 0em;
+    background-color: rgba(100, 100, 100, 0.05);
+}
+audio::-webkit-media-controls-panel{
+    background-color: rgba(155, 155, 155);
+}
+#second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+#sec{
+    display: flex;
+    justify-content: space-between;
+    width: 70em;
+}
+.conteudo{
+    flex-grow: 1;
+    max-width: 16em;
+    backdrop-filter: blur(0.75em);
+    background-color: rgba(166, 166, 166, 0.3);
+    box-shadow: 0.2em 0.2em 0.4em rgba(115, 115, 115, 0.2);
+    height: 34em;
+    border-radius: 1.4em;
+}
+.conteudo > h2{
+    text-align: center;
+}
+.conteudo > p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    margin: 0em 0.6em;
+}
+#terceiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(0.5em);
+    background-color: rgba(166, 166, 166, 0.2);
+    box-shadow: 0.2em 0.2em 0.4em rgba(115, 115, 115, 0.18);
+    border-radius: 2em;
+    margin: 1em 0em 0em 0em;
+}
+#me{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0.5px;
+    margin: 0em;
+}
+#refer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60em;
+    margin: 0em;
+}
+#refer > p{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    width: 50em;
+}
+#funk{
+    width: 150px;
+}
