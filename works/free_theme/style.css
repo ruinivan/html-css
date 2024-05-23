@@ -6,10 +6,16 @@
     --cor4: #D800E0;
     --cor: #E00068;
     --sombra: rgba(0, 0, 0, 0.5);
+    --font_padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font_titulo: Arial, Helvetica, sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--font_titulo);
+}
+p{
+    font-family: var(--font_padrao);
 }
 header{
     text-align: center;
@@ -31,12 +37,11 @@ nav{
     padding: 1.55vw;
 }
 nav a{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 4px;
+    height: 2vw;
     font-size: 20px;
     border-radius: 6px;
     transition: all 0.8s;
@@ -54,7 +59,7 @@ nav a:hover{
     text-align: center;
     filter: opacity(0.8) blur(1.2px);
     transition: all 0.8s;
-    width: 16.52vw;
+    width: 16.49vw;
     height: 5.2vw;
     translate: 0% -31%;
     background-size: cover;
@@ -157,17 +162,8 @@ nav a:hover{
     padding: 3vw 3vw;
     box-shadow: inset 6px 5px 8px var(--sombra);
 }
-#art1, #art3, #art5{
-    display: flex;
-    justify-content: end;
-}
-.sect{
-    background-color: white;
-    padding: 25px;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 5px 3px 3px var(--sombra);
-    animation: fade 6s;
+.art{
+    animation: fade 10s;
 }
 @keyframes fade{
     from {
@@ -177,8 +173,32 @@ nav a:hover{
         opacity: 1;
     }
 }
+#art1, #art3, #art5{
+    display: flex;
+    justify-content: end;
+}
+#art0{
+    display: flex;
+}
+#art0 > img{
+    width: 400px;
+    height: 215px;
+    margin-left: 8vw;
+}
+#art1 > video{
+    width: 170px;
+    height: 215px;
+    margin-right: 130px;
+}
+.sect{
+    background-color: white;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px var(--sombra);
+}
 #sect0, #sect1, #sect2, #sect3, #sect4{
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .sect h1{
     font-size: 28px;
@@ -195,27 +215,61 @@ nav a:hover{
     margin: 0px 15px;
     text-align: justify;
     font-size: 18px;
-    line-height: 1.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    line-height: 1.5em;   
 }
-#sect1{
-    animation-duration: 7s;
+#art0{
 }
-#sect2{
-    animation-duration: 8s;
-}
-#sect3{
-    animation-duration: 9s;
-}
-#sect4{
-    animation-duration: 10s;
-}
-#sect5{
+#art1{
     animation-duration: 11s;
+}
+#art2{
+    animation-duration: 12s;
+}
+#art3{
+    animation-duration: 13s;
+}
+#art4{
+    animation-duration: 14s;
+}
+#art5{
+    animation-duration: 15s;
+}
+#tet_fund{
+    background-image: url(img/tet_fund1.gif);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 30px;
+}
+#art_tetris{
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 3px 5px rgba(255, 255, 255, 0.5);
+    margin: auto;
+    max-width: 800px;
+    line-height: 1.5em;
+    padding: 20px 30px;
+    border-radius: 10px;
+    animation: fade 6s;
+}
+#art_tetris > h1{
+    text-decoration: underline;
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
+}
+#art_tetris > p{
+    text-align: justify;
+    margin-bottom: 15px;
+    text-indent: 25px;
+    text-shadow: 0.5px 0.5px 1px var(--sombra);
+}
+#art_tetris a{
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 20px;
 }
