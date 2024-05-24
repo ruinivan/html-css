@@ -376,6 +376,30 @@ nav a:hover{
 #art_wii p{
     text-indent: 25px;
 }
+#pubg_fund{
+    background-image: url(img/pubg_fund.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+}
+#art_pubg{
+    background-color: rgb(200, 200, 200, 0.9);
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+#art_pubg h1{
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+#art_pubg h2{
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+#art_pubg p{
+    text-indent: 25px;
+}
 footer{
     background-color: black;
     color: white;
