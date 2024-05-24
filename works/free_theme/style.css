@@ -315,6 +315,7 @@ nav a:hover{
 #art_mine h1{
     font-size: 36px;
     margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_mine a{
     color: black;
@@ -339,11 +340,13 @@ nav a:hover{
 #art_mine h2{
     margin-bottom: 20px;
     margin-top: 30px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_mine p{
     margin-bottom: 15px;
     text-indent: 25px;
     margin-bottom: 15px;
+    text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 #gtav_fund{
     background-image: url(img/gtav_fund.jpg);
@@ -363,15 +366,16 @@ nav a:hover{
 }
 #art_gta h1{
     margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_gta h2{
     margin-bottom: 20px;
-}
-#art_gta h2{
     margin-top: 30px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_gta p{
     margin-bottom: 15px;
+    text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 #art_gta img{
     display: block;
@@ -397,13 +401,16 @@ nav a:hover{
 #art_wii h1{
     font-size: 36px;
     margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_wii h2{
     margin-bottom: 20px;
     margin-top: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_wii p{
     text-indent: 25px;
+    text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 #pubg_fund{
     background-image: url(img/pubg_fund.jpeg);
@@ -421,13 +428,16 @@ nav a:hover{
 #art_pubg h1{
     font-size: 36px;
     margin-bottom: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_pubg h2{
     margin-bottom: 20px;
     margin-top: 25px;
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 #art_pubg p{
     text-indent: 25px;
+    text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 footer{
     background-color: black;
