@@ -197,7 +197,7 @@ nav a:hover{
     background-color: white;
     padding: 25px;
     max-width: 800px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 5px 3px 3px var(--sombra);
 }
 #sect0, #sect1, #sect2, #sect3, #sect4{
@@ -249,7 +249,7 @@ nav a:hover{
     max-width: 800px;
     line-height: 1.5em;
     padding: 20px 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     animation: fade 6s;
 }
 #art_tetris > h1{
@@ -276,12 +276,12 @@ nav a:hover{
     padding: 30px;
 }
 #art_mine{
-    background-color: rgb(200, 200, 200, 0.75);
+    background-color: rgb(200, 200, 200, 0.85);
     box-shadow: 5px 3px 5px rgba(200, 200, 200, 0.5);
     margin: auto;
     max-width: 800px;
     padding: 20px 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     animation: fade 6s;
 }
 #art_mine h1{
@@ -316,6 +316,41 @@ nav a:hover{
     line-height: 1.5em;
     margin-bottom: 15px;
     text-indent: 35px;
+}
+#gtav_fund{
+    background-image: url(img/gtav_fund.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left bottom;
+    padding: 30px;
+}
+#art_gta{
+    background-color: rgb(200, 200, 200, 0.85);
+    box-shadow: 5px 3px 5px rgba(200, 200, 200, 0.5);
+    margin: auto;
+    max-width: 800px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    animation: fade 6s;
+}
+#art_gta h1, h2{
+    margin-bottom: 20px;
+}
+#art_gta h2{
+    margin-top: 25px;
+}
+#art_gta p{
+    margin-bottom: 15px;
+}
+#art_gta img{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#art_gta ol{
+    list-style-position: inside;
+    margin-bottom: 25px;
 }
 footer{
     background-color: black;
