@@ -279,7 +279,7 @@ nav a:hover{
     max-width: 800px;
     padding: 20px 30px;
     border-radius: 15px;
-    animation: fade 6s;
+    animation: fade 3s;
 }
 #art_tetris > h1{
     font-size: 36px;
@@ -310,7 +310,7 @@ nav a:hover{
     max-width: 800px;
     padding: 20px 30px;
     border-radius: 15px;
-    animation: fade 6s;
+    animation: fade 3s;
 }
 #art_mine h1{
     font-size: 36px;
@@ -362,7 +362,7 @@ nav a:hover{
     max-width: 800px;
     padding: 20px 30px;
     border-radius: 15px;
-    animation: fade 6s;
+    animation: fade 3s;
 }
 #art_gta h1{
     margin-bottom: 25px;
@@ -397,6 +397,7 @@ nav a:hover{
     max-width: 800px;
     padding: 20px 30px;
     border-radius: 15px;
+    animation: fade 3s;
 }
 #art_wii h1{
     font-size: 36px;
@@ -424,6 +425,7 @@ nav a:hover{
     margin: auto;
     padding: 20px 30px;
     border-radius: 15px;
+    animation: fade 3s;
 }
 #art_pubg h1{
     font-size: 36px;
