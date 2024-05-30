@@ -1,29 +1,122 @@
 @charset "UTF-8";
 :root{
-    --geral_family:
+    --geral_family: ;
+    --color1: #7FDBFF;
+    --color2: #001F3F;
+    --color3: #0074D9;
+    --color4: #3D9970;
+    --color5: #FFDC00;
 }
 *{
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: #001f3f;
+body{
+    background-color: var(--color1);
 }
-header img{
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    display: inline;
-    width: 42px;
-    height: 42px;
+header{
+    background-color: var(--color2);
 }
 header h1{
+    color: white;
     display: block;
-    padding: 20px;
+    padding: 1.5vw;
     margin: auto;
     width: 29vw;
     font-size: 2.5em;
 }
-body{
-    background-color: #7FDBFF;
+#logo{
+    position: absolute;
+    display: inline;
+    width: 75px;
+    height: 75px;
+    transition: all .6s;
+    border: 5px transparent rgba(128, 128, 128);
+}
+#logo:hover{
+    border: 3px solid darkblue;
+    transform: scale(1.2) rotateZ(360deg);
+    border-radius: 50%;
+}
+#control{
+    position: relative;
+    display: inline-block;
+    translate: 40px -90px;
+}
+#control:hover #menu1{
+    display: block;
+}
+#control:hover #logo{
+    border: 3px solid darkblue;
+    transform: scale(1.2) rotateZ(360deg);
+    border-radius: 50%;
+}
+#menu1{
+    position: absolute;
+    display: none;
+    font-size: 1.15em;
+    background-color: var(--color3);
+    padding: 5px;
+    border-radius: 10px;
+    translate: -10px 85px;
+    width: 200px;
+    line-height: 1.1em;
+    z-index: 1;
+}
+.interacao1{
+    color: white;
+    display: block;
+    padding: 5px;
+}
+.interacao1:hover{
+    background-color: var(--color2);
+    color: var(--color4);
+    border-radius: 10px;
+}
+.interacao1:active{
+    background-color: black;
+    color: white;
+}
+#menu2{
+    max-width: 500px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-left: 25px;
+}
+.interacao2{
+    background-color: grey;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.interacao2:hover{
+    color: var(--color5);
+    transform: scale(1.2);
+}
+.interacao2:active{
+    color: white;
+    background-color: black;
+}
+main h2{
+    font-size: 1.8em;
+    padding: 2vw 0vw 0.8vw 1vw;
+}
+main p{
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 0px 20px;
+}
+footer{
+    background-color: black;
+    padding: 15px;
+    margin-top: 20px;
+    color: white;
+}
+footer p{
+    display: block;
+    margin: auto;
+    width: 11.5vw;
 }
