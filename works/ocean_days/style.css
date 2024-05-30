@@ -10,6 +10,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--color1);
@@ -20,17 +21,31 @@ header{
 header h1{
     color: white;
     display: block;
-    padding: 1.5vw;
+    padding: 1.3vw 0vw 1vw 0vw;
     margin: auto;
     width: 29vw;
     font-size: 2.5em;
+    text-align: center;
+}
+header p{
+    color: white;
+    display: block;
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+    font-size: 1.1em;
+}
+header span{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
 }
 #logo{
     position: absolute;
     display: inline;
-    width: 75px;
-    height: 75px;
-    transition: all .6s;
+    width: 6.05vw;
+    height: 6vw;
+    transition: all .25s;
     border: 5px transparent rgba(128, 128, 128);
 }
 #logo:hover{
@@ -41,7 +56,7 @@ header h1{
 #control{
     position: relative;
     display: inline-block;
-    translate: 40px -90px;
+    translate: 40px -103px;
 }
 #control:hover #menu1{
     display: block;
@@ -58,8 +73,8 @@ header h1{
     background-color: var(--color3);
     padding: 5px;
     border-radius: 10px;
-    translate: -10px 85px;
-    width: 200px;
+    translate: -10px 107px;
+    width: 13vw;
     line-height: 1.1em;
     z-index: 1;
 }
@@ -67,26 +82,31 @@ header h1{
     color: white;
     display: block;
     padding: 5px;
+    transition: all .35s;
 }
 .interacao1:hover{
     background-color: var(--color2);
     color: var(--color4);
     border-radius: 10px;
 }
+.interacao1:hover::after{
+    content: counter(⬅️) ⬅;
+}
 .interacao1:active{
     background-color: black;
     color: white;
 }
 #menu2{
-    max-width: 500px;
-    margin-right: 10px;
+    max-width: 800px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 18px;
-    padding-left: 25px;
+    padding: 20px 0px 30px 25px;
+    font-size: 1.1em;
 }
 .interacao2{
     background-color: grey;
+    box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.5);
     color: black;
     padding: 5px;
     border-radius: 10px;
@@ -100,14 +120,84 @@ header h1{
     color: white;
     background-color: black;
 }
-main h2{
-    font-size: 1.8em;
-    padding: 2vw 0vw 0.8vw 1vw;
+main h1{
+    font-size: 2.2em;
+    text-decoration: underline;
+    padding: 0.5vw 0vw 1.8vw 0.2vw;
 }
-main p{
+main h2, main h3{
+    font-size: 1.8em;    
+}
+main p:not(#desc_foto2){
+    text-indent: 25px;
+}
+main img{
+    box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.5);
+}
+#main1{
+    max-width: 800px;
+    margin: auto;
+}
+#t1_homepage{
+    padding: 0vw 0vw 0.8vw 1vw;
+}
+#t2_homepage, #t3_homepage, #t4_homepage, #t5_homepage{
+    padding: 0vw 0vw 0.8vw 1vw;
+}
+#main1 p{
     line-height: 1.5em;
     text-align: justify;
     margin: 0px 20px;
+    font-size: 1.1em;
+    padding: 0.5vw 0vw 1.2vw 0vw;
+}
+#mapa{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 780px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#main2{
+    margin: auto;
+    max-width: 800px;
+}
+#main2 h2{
+    margin: 10px 0px 20px 0px;
+}
+#main2 p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+#main2 p:not(#desc_foto2){
+    text-align: justify;
+}
+#foto1{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 800px;
+    border-radius: 5px;
+}
+#foto2{
+    display: block;
+    margin: auto;
+    width: 780px;
+    border-radius: 10px;
+}
+#desc_foto2{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 1px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 footer{
     background-color: black;
