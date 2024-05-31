@@ -131,12 +131,12 @@ main h1{
     padding: 0.5vw 0vw 1.8vw 0.2vw;
 }
 main h2, main h3{
-    font-size: 1.8em;    
+    font-size: 1.8em;   
 }
 main p:not(#desc_foto2){
     text-indent: 25px;
 }
-main img{
+main img:not(.bandeira){
     box-shadow: 7px 5px 12px rgba(0, 0, 0, 0.5);
 }
 #main1{
@@ -156,6 +156,11 @@ main img{
     font-size: 1.1em;
     padding: 0.5vw 0vw 1.2vw 0vw;
 }
+#mapa_dos_oceanos{
+    max-width: 800px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 #mapa{
     display: block;
     margin: auto;
@@ -164,19 +169,19 @@ main img{
     margin-bottom: 10px;
     border-radius: 15px;
 }
-#main2{
+.main2{
     margin: auto;
     max-width: 800px;
 }
-#main2 h2{
+.main2 h2{
     margin: 10px 0px 20px 0px;
 }
-#main2 p{
+.main2 p:not(#st){
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 25px;
 }
-#main2 p:not(#desc_foto2){
+.main2 p:not(#desc_foto2){
     text-align: justify;
 }
 #foto1{
@@ -212,6 +217,52 @@ main img{
 #desc_foto4{
     max-width: 500px;
 }
+#mapa_atlantico{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#profund_atlantico{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 25px;
+}
+#atlan{
+    max-width: 450px;
+    text-align: center;
+}
+.list_carac{
+    list-style-position: inside;
+}
+.list_carac > li{
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+#st{
+    font-size: 1.1em;
+}
+.continente{
+    padding: 20px 0px 10px 0px;
+}
+.bandeiras{
+    columns: 3;
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 1.1em;
+}
+.bandeiras > li{
+    max-width: 250px;
+}
+.bandeira{
+    width: 20px;
+    margin-right: 5px;
+}
 footer{
     background-color: black;
     padding: 15px;
@@ -221,5 +272,6 @@ footer{
 footer p{
     display: block;
     margin: auto;
-    width: 11.5vw;
+    max-width: 800px;
+    text-align: center;
 }
